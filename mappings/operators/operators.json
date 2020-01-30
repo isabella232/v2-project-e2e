@@ -1,0 +1,22 @@
+{
+  "failure": "default:password2",
+  "operator": "oncourse-operator:password",
+  "operator2": "oncourse-operator2:password",
+  "operator3": "oncourse-operator3:password",
+  "operator4": "oncourse-operator4:password",
+  "operator-shepparton": "oncourse-operator-shepparton:password",
+  "operator-shepparton-harness": "operator-shepparton-harness:password",
+  "operator-nontab": "oncourse-operator-nontab:password",
+  "rcm": "oncourse-rcm:password",
+  "rcmfinance": "oncourse-rcmfinance:password",
+  "banker": "oncourse-banker:password",
+  "banker2": "oncourse-banker2:password",
+  "banker3": "oncourse-banker3:password",
+  "finance": "oncourse-finance:password",
+  "supervisor": "oncourse-supervisor:password",
+  "technician": "oncourse-technician:password",
+  "root": "oncourse-root:password",
+  "superbanker": "oncourse-superbanker:password",
+  "superrcm": "oncourse-superrcm:password",
+  "rcmbanker": "oncourse-rcmbanker:password"
+}

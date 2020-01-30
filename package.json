@@ -1,0 +1,17 @@
+{
+  "name": "www-ssc-web",
+  "version": "0.1.01",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint './**'"
+  },
+  "eslintIgnore": [
+    "/**/*.jpg",
+    "/**/*.png",
+    "/**/*.json",
+    "/**/*.feature",
+    "node-modules/",
+    "dist",
+    "reports"
+  ]
+}

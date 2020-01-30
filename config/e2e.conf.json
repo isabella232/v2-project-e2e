@@ -25,7 +25,7 @@
   "baseUrl": "http://localhost:3000",
 
   "testsConfigurationVariables": {
-    "allScriptsTimeout": 120000,
+    "allScriptsTimeout": 12000,
     "required": {
       "retry": {
         "default": {
@@ -50,6 +50,7 @@
     },
     "custom": {
       "urlsPath": "./e2e/mappings/pages/pages",
+      "operatorsPath": "./e2e/mappings/operators/operators",
       "logginLevel":"error"
     }
   }

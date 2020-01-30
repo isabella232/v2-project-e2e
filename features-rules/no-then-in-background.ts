@@ -3,19 +3,17 @@ class ThenForbiddenInBackground {
   public static readonly ruleName = 'no-then-in-background';
 
   public static thenForbidden(feature) {
-    var errors = [];
-    if (feature && feature.children) {
-      for (let background of feature.children) {
-        if (background.type !== 'Background') {
+    const errors = [];
+    if (feature && feature.children)
+      for (const background of feature.children) {
+        if (background.type !== 'Background')
           continue;
-        }
-        for (let step of background.steps) {
-          if (step.keyword === 'Then ') {
+
+        for (const step of background.steps)
+          if (step.keyword === 'Then ')
             errors.push(ThenForbiddenInBackground.createError(step));
-          }
-        }
+
       }
-    }
 
     return errors;
   }

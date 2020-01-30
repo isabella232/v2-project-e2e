@@ -1,16 +1,16 @@
-import { injectable, inject } from "inversify";
+import { injectable, inject } from 'inversify';
 
-import { CUSTOMTYPES } from "../../../../IoC/custom/ssc/custom-types";
-import { ICustomConfig } from "../../../framework-helpers/interfaces/custom/custom-config";
+import { CUSTOMTYPES } from '../../../../IoC/custom/ssc/custom-types';
+import { CustomConfig } from '../../../framework-helpers/interfaces/custom/custom-config';
 
 import * as path from 'path';
 import * as fs from 'fs';
 
 @injectable()
 export class PageURLHelper {
-  private readonly customConfig: ICustomConfig;
+  private readonly customConfig: CustomConfig;
 
-  constructor(@inject(CUSTOMTYPES.CustomConfig) customConfig : ICustomConfig) {
+  constructor(@inject(CUSTOMTYPES.CustomConfig) customConfig: CustomConfig) {
     this.customConfig = customConfig;
   }
 
@@ -19,7 +19,7 @@ export class PageURLHelper {
   }
 
   private formatPageNameKey(pageName: string) {
-    return pageName.replace(/ /g, "_").toLowerCase();
+    return pageName.replace(/ /g, '_').toLowerCase();
   }
 
   getPageURL(pageName: string) {

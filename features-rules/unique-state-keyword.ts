@@ -2,37 +2,36 @@ class KeywordUniquenessRule {
   public static readonly ruleName = 'unique-given-when-then-per-scenario';
 
   public static keywordUniqueness(feature) {
-    var errors = [];
-    if (feature && feature.children) {
-      for (let scenario of feature.children) {
-        let givenFound: boolean = false;
-        let whenFound: boolean = false;
-        let thenFound: boolean = false;
+    const errors = [];
+    if (feature && feature.children)
+      for (const scenario of feature.children) {
+        let givenFound = false;
+        let whenFound = false;
+        let thenFound = false;
 
-        for (let step of scenario.steps) {
+        for (const step of scenario.steps) {
           if (step.keyword === 'Given ') {
-            if (givenFound) {
+            if (givenFound)
               errors.push(KeywordUniquenessRule.createError(step));
-            }
+
             givenFound = true;
           }
 
           if (step.keyword === 'When ') {
-            if (whenFound) {
+            if (whenFound)
               errors.push(KeywordUniquenessRule.createError(step));
-            }
+
             whenFound = true;
           }
 
           if (step.keyword === 'Then ') {
-            if (thenFound) {
+            if (thenFound)
               errors.push(KeywordUniquenessRule.createError(step));
-            }
+
             thenFound = true;
           }
         }
       }
-    }
 
     return errors;
   }
