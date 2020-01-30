@@ -1,0 +1,491 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a user I can see my account details",
+    "line": 1,
+    "id": "as-a-user-i-can-see-my-account-details",
+    "tags": [],
+    "uri": "e2e/features/account_details.feature",
+    "elements": [
+      {
+        "id": "as-a-user-i-can-see-my-account-details;as-a-verified-user-i-can-see-my-account-details",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "As a verified user I can see my account details",
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 6
+          },
+          {
+            "name": "@cam",
+            "line": 7
+          },
+          {
+            "name": "@common",
+            "line": 8
+          },
+          {
+            "name": "@ssc_mock",
+            "line": 9
+          },
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@acceptance",
+            "line": 11
+          },
+          {
+            "name": "@regression",
+            "line": 12
+          },
+          {
+            "name": "@scenario_1",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/support/custom-hooks/ssc-hook.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am a \"ACT\" user on the \"home\" page",
+            "match": {
+              "location": "e2e/step-definitions/custom/ssc/navigation.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2358000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I see the \"SSC\" page title",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-page.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click the \"login mobile\" button",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/click.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 482000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I am directed to the \"login\" dialog",
+            "match": {
+              "location": "e2e/step-definitions/custom/ssc/navigation.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the \"login dialog\" element should be displayed",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-visibility.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"login dialog title\" contains the text \"Login\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I fill in the \"account id\" input with \"123456\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/input-dropdown.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I fill in the \"password\" input with \"password02\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/input-dropdown.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I click the \"submit\" button",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/click.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am directed to the \"home\" page",
+            "match": {
+              "location": "e2e/step-definitions/custom/ssc/navigation.ts:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the \"play ssc\" element should be displayed",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-visibility.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click the \"account settings mobile\" link",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/click.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I click the \"my account mobile\" link",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/click.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I am directed to the \"personal details\" page",
+            "match": {
+              "location": "e2e/step-definitions/custom/ssc/navigation.ts:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the \"account heading\" contains the text \"My account\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "the \"account details\" contains the text \"Account number: 123456\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the \"account details\" contains the text \"Name: Mr Nick Worth\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "the \"account details\" contains the text \"ID Verified: Yes\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the \"account details\" contains the text \"Note: To change these details please contact 1800 056 066 for domestic calls and +61 2 8863 5320 for international calls.\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "the \"account details\" contains the text \"Address details\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the \"account details\" contains the text \"Street number: 1\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "the \"account details\" contains the text \"Street name: Queen St\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the \"account details\" contains the text \"Suburb/City: Albert Park\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "the \"account details\" contains the text \"State/Territory: ACT\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the \"account details\" contains the text \"Postcode: 3123\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the \"account details\" contains the text \"Contact details\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the \"account details\" contains the text \"Mobile phone number: 0432567232\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the \"account details\" contains the text \"Home phone number: 034651231\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "the \"account details\" contains the text \"Work phone number: 034567894\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "the \"account details\" contains the text \"Email address:\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "the \"account details\" contains the text \"Marketing preferences\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the \"account details\" contains the text \"To change your marketing preferences please contact 1800 056 066 for domestic calls and +61 2 8863 5320 for international calls.\"",
+            "match": {
+              "location": "node_modules/tabcorp-cucumber-protractor-framework-v2/src/e2e/step-definitions/then/verify-value.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

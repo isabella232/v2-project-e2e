@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "es6",
+      "dom",
+      "esnext",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "outDir": "../dist",
+    "rootDir" : "./",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "jsx": "react"
+  },
+  "include": ["../e2e"],
+  "exclude": ["../projects"]
+}
